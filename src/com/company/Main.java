@@ -2,19 +2,23 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        Stack stack = new Stack();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
-        stack.push(5);
-        stack.push(6);
-        stack.push(7);
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.peek());
-        stack.display();
-        stack.push(7);
-        stack.display();
+        Queue queue = new Queue();
+        queue.enqueue(4);
+        queue.enqueue(7);
+        queue.enqueue(2);
+        System.out.println("Front Element is: "+ queue.peek());
+        queue.display();
+        System.out.println("Deleted Element is: "+ queue.dequeue());
+        queue.enqueue(34);
+        queue.enqueue(73);
+        queue.enqueue(45);
+        System.out.println("Front Element is: "+ queue.peek());
+        queue.display();
+        System.out.println("Deleted Element is: "+ queue.dequeue());
+        System.out.println("Deleted Element is: "+ queue.dequeue());
+        System.out.println("Deleted Element is: "+ queue.dequeue());
+        System.out.println("Deleted Element is: "+ queue.dequeue());
+        System.out.println("Deleted Element is: "+ queue.dequeue());
+        queue.display();
     }
 }
