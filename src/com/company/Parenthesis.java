@@ -25,11 +25,14 @@ class StringStack{
         }
     }
 
-    void pop(){
+    String pop(){
         if(this.isEmpty()){
             System.out.println("Empty Stack");
+            return "";
         } else {
+            String popElement = Character.toString(arr[top]);
             top--;
+            return popElement;
         }
     }
 }
