@@ -2,7 +2,7 @@ package com.company;
 
 public class Stack {
     int top;
-    int[] arr = new int[5];
+    int[] arr = new int[10];
 
     Stack(){
         this.top =-1;
@@ -47,6 +47,20 @@ public class Stack {
             }
         }
     }
+
+    int findMid(){
+        int mid = -1;
+        if(top==-1){
+            System.out.println("Empty Stack");
+        } else {
+            if(top%2==0){
+                mid = arr[top/2];
+            } else {
+                mid = (arr[top/2] + arr[top/2 +1]) /2;
+            }
+        }
+        return mid;
+    }
 }
 
 /*
@@ -64,4 +78,5 @@ public class Stack {
         stack.display();
         stack.push(7);
         stack.display();
+        System.out.println("Mid element = "+stack.findMid());
  */
