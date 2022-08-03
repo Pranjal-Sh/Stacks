@@ -69,6 +69,10 @@ public class Stack {
             return false;
         }
     }
+
+    int size(){
+        return top+1;
+    }
 }
 
 /*
