@@ -61,6 +61,14 @@ public class Stack {
         }
         return mid;
     }
+
+    boolean isEmpty(){
+        if(top==-1){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
 /*
