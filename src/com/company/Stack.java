@@ -2,14 +2,15 @@ package com.company;
 
 public class Stack {
     int top;
-    int[] arr = new int[10];
+    int[] arr;
 
-    Stack(){
+    Stack(int size){
         this.top =-1;
+        this.arr = new int[size];
     }
 
     void push(int element){
-        if(top+1>=arr.length){
+        if(top==arr.length-1){
             System.out.println("Stack Overflow");
         } else {
             top++;

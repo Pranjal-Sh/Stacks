@@ -3,7 +3,7 @@ package com.company;
 class NextGreaterElement{
     void nge(int[] arr){
         int n=arr.length;
-        Stack stack = new Stack();
+        Stack stack = new Stack(n);
 
         stack.push(arr[0]);
         int next,element;
@@ -37,7 +37,7 @@ class NextGreaterElement{
     void reverseNGE(int[] arr){
         int n = arr.length;
         int[] nge = new int[n];
-        Stack stack = new Stack();
+        Stack stack = new Stack(n);
 
         for(int i=n-1;i>=0; i--){
             if(!stack.isEmpty()){

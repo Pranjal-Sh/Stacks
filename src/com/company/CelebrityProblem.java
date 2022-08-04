@@ -12,7 +12,7 @@ class CelebrityProblem{
 
     int celebrity(){
         int n = arr.length;
-        Stack stack = new Stack();
+        Stack stack = new Stack(n);
 
         for(int i=0; i<n ; i++){
             stack.push(i);

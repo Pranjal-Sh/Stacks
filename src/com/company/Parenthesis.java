@@ -35,6 +35,14 @@ class StringStack{
             return popElement;
         }
     }
+
+    char peek(){
+        if(this.isEmpty()){
+            return 'n';
+        } else {
+            return arr[top];
+        }
+    }
 }
 
 class Parenthesis{
