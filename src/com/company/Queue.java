@@ -4,9 +4,25 @@ class Queue{
     int front=-1, rear=-1;
     int[] arr = new int[5];
 
+    boolean isEmpty(){
+        if(front>rear || front==-1){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    boolean isFull(){
+        if(rear>=arr.length-1){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     void enqueue(int data){
         if(rear>=arr.length-1){
-            System.out.println("Queue if full");
+            System.out.println("Queue is full");
         } else {
             if(front==-1)
                 front++;
